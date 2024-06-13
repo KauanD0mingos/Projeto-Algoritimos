@@ -75,13 +75,13 @@ while True:
                 if opcao_cliente == '1':
                     compra = Cliente.compra.compra_ingresso(Filmes,Ingressos)
 
-                elif opcao_cliente == '2':
+                elif opcao_cliente == '3':
                     ingresso = Cliente.ingressos.listar_ingressos(Ingressos)
                     
-                elif opcao_cliente == '3':
+                elif opcao_cliente == '2':
                     while True:
                         Menus.menu_feedback.menu_feedback()
-                        opcao_feedback = input("Escolha uma opção: ")
+                        opcao_feedback = input('\n\033[1;37mEscolha uma opção:\033[m ')
 
                         if opcao_feedback == '1':
                             Cliente.avaliar_filme.avaliar_filme(Filmes,Ingressos,Avaliacoes)
