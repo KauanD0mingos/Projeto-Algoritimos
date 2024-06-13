@@ -30,7 +30,6 @@ def avaliar_filme(Filmes, ingressos_comprados, Comentarios):
     if avaliacao.isdigit():
         avaliacao = int(avaliacao)
         if 1 <= avaliacao <= 5:
-            # A avaliação é válida, podemos prosseguir
             comentario = input('\033[1;37mDeixe um comentário (opcional):\033[m ')
             if not comentario:
                 comentario = None
