@@ -1,5 +1,6 @@
+import getpass
+
 def login_ADM(usuarios):
-    import getpass
 
     tentativas = 3  
     while tentativas > 0:
