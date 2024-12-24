@@ -1,6 +1,6 @@
+import pandas as pd
+import matplotlib.pyplot as plt
 def mais_vendidos(Filmes):
-    import pandas as pd
-    import matplotlib.pyplot as plt
 
     df = pd.DataFrame(Filmes)
     df.dropna(inplace=True)
